@@ -11,12 +11,8 @@
 |
 */
 
-Route::get('/', 'SearchController@home');
+Route::get('/{location?}/{day?}', 'SearchController@getWeather');
 
 Route::get('howto', function () {
 	return view('pages.howto');
 });
-
-Route::get('/{location}', 'SearchController@location');
-
-Route::get('/{location}/{day}', 'SearchController@locationDay');
