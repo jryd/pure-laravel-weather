@@ -25,5 +25,13 @@
 
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js"></script>
+        <script type="text/javascript">
+            var skycons = new Skycons({"color": "black"});
+            
+            skycons.add("currentWeather", "{{ $weather->currently->icon }}");
+            
+            skycons.play();
+        </script>
     </body>
 </html>

@@ -13,7 +13,7 @@ return [
     // Providers get called in the chain order given here.
     // The first one to return a result will be used.
     'providers' => [
-        'Geocoder\Provider\GoogleMapsProvider' => ['en-EN', 'Australia', $ssl = true, 'AIzaSyBj_e6ulytCPHnmHokBLJ7hyA6iPs1wEdY'],
+        'Geocoder\Provider\GoogleMapsProvider' => ['en-EN', 'Australia', true],
         'Geocoder\Provider\FreeGeoIpProvider'  => null,
     ],
     'adapter'  => 'Geocoder\HttpAdapter\CurlHttpAdapter',
