@@ -12,4 +12,5 @@ You can specify the location you're after, though, by adding this in the URI; ht
 
 1. Clone the repo
 2. `composer install --no-scripts`
-3. Add your DarkSky API key and Google Maps API key to the `.env` file as `DARKSKY_KEY` and `GOOGLE_MAPS_KEY`
+3. Configure your `.env` file for your application. You can rename the `env.example` file to `.env` if required. Remember to generate an application key; this can be done with `php artisan key:generate`
+4. Add your DarkSky API key and Google Maps API key to the `.env` file as `DARKSKY_KEY` and `GOOGLE_MAPS_KEY`
